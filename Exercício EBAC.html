@@ -7,23 +7,40 @@
     <title>Exercício de HTML - EBAC</title>
 </head>
 <body>
-    <h1>Formulário de cadastro de novos usuários</h1>
-    <h3>Por gentileza, preencha os campos abaixo:</h3>
-    <form>
-        <input type="text" placeholder="Nome">
+    <main>
+        <h1>Formulário de cadastro de novos usuários</h1>
+        <h3>Por gentileza, preencha os campos abaixo:</h3>
+        <form>
+        <label for="nome"></label>
+        <input type="text" placeholder="Seu nome" id="nome" required/>
         <br />
-        <input type="text" placeholder="Sobrenome">
+
+        <label for="sobrenome"></label>
+        <input type="text" placeholder="Seu sobrenome" id="sobrenome" required/>
         <br />
-        <input type="text" placeholder="E-mail">
+
+        <label for="e-mail"></label>
+        <input type="email" placeholder="Seu e-mail" id="email" required/>
         <br />
-        <input type="text" placeholder="Usuário">
+
+        <label for="usuario"></label>
+        <input type="text" placeholder="Usuário" id="usuario" required/>
         <br />
-        <input type="text" placeholder="Senha"> <br />
+
+        <label for="password"></label>
+        <input type="password" placeholder="Senha" id="password" required/> 
         <br />
+        <br />
+        
         <input type="checkbox" id="checkbox-termos" /> <label for="checkbox">Aceito os termos e condições de uso</label>
         <br />
         <br />
-        <button type="submit">Cadastrar</button>
-    </form>
+        <button type="submit" value="Cadastrar">Cadastrar</button>
+        </form>
+    </main>
+        <footer> 
+        <p>&copy; 2023 - Todos os direitos reservados</p>
+        </footer>
 </body>
+
 </html>
